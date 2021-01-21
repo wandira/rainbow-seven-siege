@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+ 
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/utility.js"></script>
+  
+  <title>Welcome to Rainbow Seven</title>
+</head>
+
+<body>
+  <header class="hero form">
+    <div class="navbar top" id="navbar">
+      <h1 class="logo">
+        <span class="text-primary" > Rainbow</span> Seven
+      </h1>
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn"> <i class="fas fa-bars"></i></button>
+          <div class="dropdown-content">
+            <a href="index.html" >Home</a>
+            <a href="ops.html">Operators</a>
+            <a href="maps.html">Maps</a>
+            <a href="quarantine.html">Quarantine</a>
+            <a href="order.html" style="color: #c5c6c7;">Pre-Order</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="content" id="landing">
+      <img style="width: 80px;" src="./Blueprint/logotransparan.png" alt="" class="logor7">
+      <h1>Order Page</h1>
+    </div>
+  </header>
+
+  <div id="container">
+    <div class="form-wrap">
+      <h1>Order Now</h1>
+      <p>Your Game will be delivered instantly</p>
+      <form id="form" onsubmit="return validate()">
+        <div class="form-group">
+          <label for="name"></label>
+          <input type="text" name="name" id="name" placeholder="Full Name" />
+        </div>
+        <div class="form-group">
+          <label for="email"></label>
+          <input type="email" name="email" id="email"placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <label for="password"></label>
+          <input type="password" name="password" id="password" placeholder="Password"/>
+        </div>
+        <div class="form-group">
+          <label for="address"></label>
+          <input type="text" name="address" id="address" placeholder="Address" />
+        </div>
+        <div class="form-group">
+          <label for="gtype"></label>
+          <input type="text" name="gtype" id="gtype" placeholder="Game Type (Premium, Regular)" />
+        </div>
+        <div class="form-group">
+          <label for="copy"></label>
+          <input type="text" name="copy" id="copy" placeholder="Number of Copies" />
+        </div>
+        <div>
+          <input type="checkbox" id="terms"><span id="terms" for="terms"> I accept the Terms and Agreements</span>
+        </div>
+        <button type="submit" class="btn">Order</button>
+      </form>
+      <div id="error"></div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="https://facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2020 Rainbow Seven</p>
+  </footer>
+  <script src="js/orderjs.js"></script>
+
+</body>
